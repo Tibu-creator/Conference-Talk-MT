@@ -1,5 +1,5 @@
 \babel@toc {british}{}\relax 
 \beamer@sectionintoc {1}{Who am I?}{3}{0}{1}
-\beamer@sectionintoc {2}{Overview}{4}{0}{2}
-\beamer@sectionintoc {3}{Inside second order arithmetic}{5}{0}{3}
-\beamer@sectionintoc {4}{Outside}{6}{0}{4}
+\beamer@sectionintoc {2}{Introduction}{4}{0}{2}
+\beamer@sectionintoc {3}{Inside second order arithmetic}{6}{0}{3}
+\beamer@sectionintoc {4}{Outside}{7}{0}{4}

@@ -10,6 +10,7 @@
 \usetikzlibrary{trees}
 \usepackage{amsfonts}
 \usepackage{hyperref}
+\usepackage{tabularx}
 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -59,7 +60,7 @@
 
 %------------------------------------------------------
 
-\begin{frame}{Programme}
+\begin{frame}{Program}
     \tableofcontents
 \end{frame}
 % Presentation structure
@@ -74,9 +75,46 @@
 
 
 %
-\section{Overview}
+\section{Introduction}
 
-\begin{frame}
+\begin{frame}{What is determinacy?}
+    
+    \begin{tabular}{llllllllll}
+        \multicolumn{10}{l}{Consider a set $A$ and a payoff set $X \subseteq A^{\omega}$.}\\
+        &&&&&&&&&\\
+        I:\ & $a_0$ &       & $a_2$ &       &          &$a_{2n}$   &           & & \\
+            &       &       &       &       & $\cdots$ &           &           & $\cdots$ & \qquad ${(a_i)}_{i < \omega} \overset{?}{\in} X$\\
+        II:\ &       & $a_1$ &       & $a_3$ &          &           &$a_{2n+1}$ & & \\
+        &&&&&&&&&\\
+        \multicolumn{10}{l}{Player I wins if yes. Otherwise player II wins.} \\ 
+        &&&&&&&&&\\
+    \end{tabular}
+
+    Axiom of determinacy ($\mathsf{AD}$): ``All these games are determined''.
+    
+    (False in $\mathsf{ZF + C}$.)
+\end{frame}
+
+%----------------------------------------------------------------
+
+\begin{frame}{Motivations and applications}
+
+    \begin{theorem}[Mycielski-Swierczkowski; Mazur, Banach; Davis]
+        $\mathsf{ZF + AD}$ proves  that every sets of real numbers is Lebesgue measurable, has 
+        the Baire property, and has the perfect set property.
+    \end{theorem}
+
+    Study these properties for projective $\Sigma^1_n$ sets in $\omega^{\omega}$. 
+
+    \begin{center}
+        Are $\Sigma^1_3$ sets Lebesgue measurable? 
+        
+        Kechris and Martin: ``Yes, provided $\mathsf{Det(\Pi^1_2)\ (+ AC_{\omega}(\omega^{\omega}))}$''.
+    \end{center}
+
+    Applications in measure theory, descriptive set theory, harmonic analysis, ergodic theory, 
+    dynamical systems etc.
+
 
 \end{frame}
 
