@@ -1,0 +1,303 @@
+\documentclass{beamer} %
+
+%%%BASICS
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{enumerate}
+\usepackage{mathtools}
+\usepackage{qtree}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{epigraph}
+
+\renewcommand{\epigraphflush}{center}
+\renewcommand{\epigraphwidth}{300}
+
+
+%%%Commandes
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+
+%%%START THEME SETTINGS
+\usetheme{Berlin}
+\usecolortheme{beaver}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{itemize item}{\color{black} $\blacksquare$}
+%%%END THEME SETTINGS
+
+%%%START APA
+\usepackage[british]{babel}
+\usepackage[backend=biber,style=apa]{biblatex}
+\DeclareLanguageMapping{british}{british-apa}
+\addbibresource{references.bib}
+%% APA citing
+%% \cite{t} - Uthor und Richter, 2010
+%% \textcite{t} - Uthor und Riter (2010)
+%% \parencite{t} - (Uthor & Riter, 2010)
+%% \parencite[Chapt.~4]{t} - (Uthor & Riter, 2010, S. 15)
+%%%END APA
+
+
+\title[Axiomes et arithmétisation pour Cantor-Bendixson]{Mathématiques inversées : Axiomes, arithmétisation et théorème de Cantor-Bendixson}
+\institute[LMAT2165]{Projet personnel et séminaire de master 1}
+\author{Thibaut Kouptchinsky}
+
+\date{Mars 2022}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%------------------------------------------------------
+
+\begin{frame}{Programme}
+    \tableofcontents
+\end{frame}
+% Presentation structure
+
+%--------------------------------------------------------
+
+\section{Un mot d'introduction}
+
+
+
+\begin{frame}{\textbf{The main question} : Quels sont les axiomes appropriés au développement des mathématiques ? }
+
+        \epigraph{\textit{Fondations of mathematics is the study of the most basic concepts and logical structure of mathematics, with an eye to the unity of human knowledge}}{\textit{Stephen G. Simpson \\ SSOA (second edition)}}
+\pause Aristote, Euclide, Descartes, Cauchy, Weierstraß, Dedekind, Peano, Frege, Russell, Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, \dots 
+
+\end{frame}
+
+
+%
+\section{\'Enoncé du théorème}
+\begin{frame}
+    \frametitle{Quelques définitions classiques}
+    \begin{block}{Espace polonais}<1->
+        Soit $X$, un ensemble, $X$ est dit \textbf{polonais} s'il est \begin{enumerate}
+            \item Un espace métrique complet ;
+            \item Séparable.
+        \end{enumerate}
+    \end{block}
+    \begin{block}{Ensemble dénombrable}<2->
+        Un ensemble $X$ est \textbf{dénombrable} s'il existe une injection $i : X \hookrightarrow \N$. On peut alors identifier $X$ à $i(X) \subseteq \N$.
+    \end{block}
+    \begin{block}{Ensemble parfait}<3->
+        Un sous-ensemble $F \subseteq X$, fermé, d'un espace polonais est \textbf{parfait} s'il ne possède pas de points isolés.
+    \end{block}
+    
+\end{frame}
+
+%%%EXAMPLES : Q dénombrable, pas IR, mais IR polonais, un intervalle fermé est parfait et espace de Baire homéomorphe aux irrationnels et $L^p$
+%-----------------------------------------------------------
+
+\begin{frame}{Un théorème des mathématiques ordinaires}
+    \begin{block}{Théorème (Cantor-Bendixson)}
+        Soit $X$, un espace polonais et un fermé $F \subseteq X$ alors il existe une \textbf{ unique décomposition} \begin{align*}
+            F = P \cup N,
+        \end{align*}
+        où $P$ est \textbf{parfait}, $N$ est \textbf{dénombrable} et $P \cap N = \emptyset$.
+    \end{block}
+\end{frame}
+
+
+%----------------------------------------------------------------
+
+\section{L'arithmétique du second ordre}
+
+\begin{frame}{Le langage de l'arithmétique du second ordre}
+    \begin{align*}
+        M = (\alert<2>{|M|, \mathcal{S}_M}, \alert<3>{+_M, \cdot_M, 0_M, 1_M}, \alert<4>{<_M})
+    \end{align*}
+    \begin{itemize}
+        \item<2-> Les \textbf{mots} sont de deux types 
+        \begin{itemize}
+            \item Les variables numériques ($\N$) ; 
+            \item Les variables d'ensembles ($\mathcal{P}(\N)$).
+        \end{itemize}
+        \item<3-> On construit des \textbf{termes} numériques à l'aide de constantes et de fonctions ;
+        \item<4-> Les \textbf{phrases} sont 
+        \begin{itemize}
+            \item Les formules atomiques $t_1 = t_2$, $t_1 < t_2$, $t_1 \in X$ ;
+            \item Les combinaisons et quantifications de celles-ci.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------
+
+\begin{frame}{Et quels axiomes ?}
+    Ceux que vous connaissez déjà :
+    \begin{itemize}
+        \item<2-> $\forall n \quad n + 1 \neq 0 ;$
+        \item<3-> $\forall m,n \quad m + 1 = n + 1 \implies m = n ;$
+        \item<3-> $\dots$
+        \item<4-> $(0 \in X \land \forall n \quad \ (n \in X \implies n + 1 \in X) \implies \forall n \quad (n \in X)).$
+    \end{itemize}
+    \pause \pause \pause \pause Et un axiome de compréhension :
+     \begin{align*}
+        \exists X \ \forall n \quad (n \in X \Longleftrightarrow \phi(n)).
+    \end{align*}
+
+        
+\end{frame}
+
+
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Une première restriction ; la compréhension arithmétique }
+    \begin{align*}
+        \exists X \ (n \in X \Longleftrightarrow \theta(n) ),
+    \end{align*}
+    où $\theta$ est une formule \textbf{arithmétique}.
+
+\begin{exampleblock}{Exemple}<2->
+   On peut parler de l'ensemble des nombres premiers $n \in P \Longleftrightarrow \theta(n) \coloneqq \forall m \forall k \ (n = m\cdot k \longrightarrow m = 1 \lor k = 1) \land n > 1.$
+\end{exampleblock}
+
+\end{frame}
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Arithmétisation}
+    \begin{block}{Fonction de couplage}
+    Un outil de \textbf{codage} vers notre langage
+        \begin{align*}
+            p : \ &\N \times \N \hookrightarrow \N \\
+            &(m,n) \mapsto (m+n)^2 + m
+        \end{align*}
+    \end{block}
+    \begin{block}{Code pour un espace polonais $\bar{A}$}<2->
+        \begin{itemize}
+            \item Une ensemble non vide $A \subseteq \N$ ;
+            \item Une distance $d : A \times A \to \Q$. ($d \subseteq A \times A \times \Q \subseteq \N$)
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Arithmétisation}
+    \begin{block}{Code pour un ouvert de $\bar{A}$}
+    Avec notre \textbf{intuition}
+        \begin{itemize}
+            \item<1-> Un ouvert $U \subseteq \bar{A}$ ;
+            \item<2-> $U = \bigcup_{(a,r) \in U^c} B(a,r)$ ;
+            \item<3-> $x \in U$.
+        \end{itemize}
+    Avec notre \textbf{langage} 
+        \begin{itemize}
+            \item<1-> Un code $U^c \subseteq A \times \Q^+ \subseteq \N$ ;
+            \item<2-> $U^c = \{(a,r) \mid a \in U \cap A \text{ et } B(a,r) \subseteq U\}$ ;
+            \item<3-> $\lim_n d(x_n,a) < r$ pour un certain $(a,r) \in U^c$.
+        \end{itemize}
+    \end{block}
+    
+\end{frame}
+
+%-------------------------------------------------------------------------
+
+\section{Preuve du théorème}
+
+\begin{frame}{Arbre binaires et chemins infinis}
+ 
+    \begin{block}{Arbre binaire}<1->
+        On note $2^{<\N} \coloneqq \bigcup_{k \in \N} 2^k$ et on dit que $T \subseteq 2^{<\N}$ est un \textbf{arbre binaire} si chaque segment initial d'un élément de $T$ est encore un élément de $T$.
+    \end{block}
+    \begin{exampleblock}<2->{L'espace de Cantor $2^{\N}$}
+        \begin{itemize}
+            \item  L'espace de Cantor est \textbf{polonais}.
+            \item<3->  Pour $\tau \in 2^{<\N}$ de longueur $k$, \begin{align*}
+            \Omega_{\tau} \coloneqq \{f \in 2^{\N}\ \mid f_{\mid k} = \tau \}.\end{align*}
+        \end{itemize}
+    \end{exampleblock}
+    
+\end{frame}
+
+\begin{frame}{Arbre binaires et chemins infinis}
+    \begin{block}{Proposition}
+        L'ensemble des chemins d'un arbre binaire $T$, noté $[T] \subseteq 2^{\N}$ est un \textbf{fermé} de l'espace de Cantor.
+    \end{block}
+
+\end{frame}
+\begin{frame}{Petite illustration}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{arbre imagé.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Arbre binaires et chemins infinis}
+    \begin{block}{Proposition}
+        L'ensemble des chemins d'un arbre binaire $T$, noté $[T] \subseteq 2^{\N}$ est un \textbf{fermé} de l'espace de Cantor.
+    \end{block}
+
+    \begin{block}<2->{Arbre parfait}
+        Un arbre binaire $T$ est \textbf{parfait} ssi pour tout $\tau \in T$, il existe deux extensions incompatibles de $\tau$ dans $T$.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Correspondance entre arbre et ensemble parfait}
+    \begin{block}{Lemme du codage par chemins}
+        Soit $C \subseteq 2^{\N}$, un \textbf{fermé}, il existe un \textbf{arbre} $T \subseteq 2^{<\N}$ tel que \begin{align*}
+        \forall f (f \in C \iff f \text{ est un chemin dans } T).
+    \end{align*}
+    L'arbre $T$ est parfait ssi $C$ aussi.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Un axiome plus fort ; compréhension $\Pi_1^1$}
+    \begin{align*}
+        \exists X \ (n \in X \Longleftrightarrow \phi(n) ),
+    \end{align*}
+    où $\phi$ est une \textbf{$\Pi_1^1$-formule} i.e. il existe une formule \textbf{arithmétique} $\theta(n,X)$ telle que \begin{align*}
+        \phi(n) \Longleftrightarrow \forall Y \ \theta(n,Y).
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Un théorème équivalent à l'axiome $\Pi_1^1$}
+    \begin{block}{Théorème (Cantor-Bendixson pour les arbres binaires)}
+        Soit $T \subset 2^{<\N}$, un arbre, le \textbf{noyau parfait} $P$ de $T$ existe. De plus, l'ensemble des chemins de $T$ qui ne sont pas des chemins dans $P$ est \textbf{dénombrable}.
+    \end{block}
+    \begin{exampleblock}{On utilise bien la compréhension $\Pi_1^1$}<2->
+    Le noyau parfait est défini par \begin{align*}
+        \tau \in P \Longleftrightarrow \exists \ P' \text{ un sous-arbre parfait non vide de } T_{\tau},
+    \end{align*}
+    où $T_{\tau}$ est l'ensemble des segments initiaux et des extensions de $\tau$ dans $T$.
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Conclusion}
+    \begin{block}{Théorème (Cantor-Bendixson pour l'espace de Cantor)}
+        Soit $C \subseteq 2^{\N}$, un \textbf{fermé} de l'espace de Cantor, la compréhension $\Pi_1^1$ prouve qu'il existe une unique décomposition \begin{align*}
+            C = P \cup N,
+        \end{align*}
+        où $P$ est parfait, $N$ est dénombrable et $P \cap N = \emptyset$.
+    \end{block}
+    \pause 
+    Et l'axiome de compréhension $\Pi_1^1$ est le bon système d'axiomes pour le prouver !
+\end{frame}
+
+\section{Trailer}
+
+\begin{frame}{The Main Question}
+    \begin{block}{Les "Big Five"}
+        \begin{itemize}
+            \item<4-> $RCA$ (constructivisme) ; Intervalles emboîtés, valeur intermédiaire, $\mathbb{R}$ indénombrable, \dots
+            \item<5-> $\dots$
+            \item<2-> $ACA$ (prédicativisme) ; Supremum, Boule unité compacte, tout $\Q$-e.v. dénombrable a une base, \dots
+            \item<5-> $\dots$
+            \item<3-> $\Pi_1^1-CA$ (imprédicativisme) ; Cantor-Bendixson, tout groupe abélien dénombrable est la somme directe d'un divisible et d'un réduit, \dots 
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\end{document}
