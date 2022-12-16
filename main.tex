@@ -22,8 +22,7 @@
 
 %%%Commandes
 
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Q}{\mathbb{Q}}
+\newtheorem{remark}[theorem]{Remark}
 
 %%%START THEME SETTINGS
 \usetheme{Berlin}
@@ -100,38 +99,161 @@
 \begin{frame}{Motivations and applications}
 
     \begin{theorem}[Mycielski-Swierczkowski; Mazur, Banach; Davis]
-        $\mathsf{ZF + AD}$ proves  that every sets of real numbers is Lebesgue measurable, has 
-        the Baire property, and has the perfect set property.
+        $\mathsf{ZF + AD}$ proves  that every sets of real numbers is Lebesgue measurable (M1), has 
+        the Baire property (M2), and has the perfect set property (M3).
     \end{theorem}
 
-    Study these properties for projective $\Sigma^1_n$ sets in $\omega^{\omega}$. 
+    \begin{itemize}
+        \item<2-> Study these properties for projective $\Sigma^1_n$ sets in $\omega^{\omega}$. 
+        \item<3-> Are $\Sigma^1_2$, $\Sigma^1_3$, etc sets Lebesgue measurable? 
+        \item<4> Applications in measure theory, descriptive set theory, harmonic analysis, ergodic theory, 
+        dynamical systems etc.
+    \end{itemize}
 
-    \begin{center}
-        Are $\Sigma^1_3$ sets Lebesgue measurable? 
-        
-        Kechris and Martin: ``Yes, provided $\mathsf{Det(\Pi^1_2)\ (+ AC_{\omega}(\omega^{\omega}))}$''.
-    \end{center}
+\end{frame}
 
-    Applications in measure theory, descriptive set theory, harmonic analysis, ergodic theory, 
-    dynamical systems etc.
+%----------------------------------------------------------------
 
+\begin{frame}{Borel Determinacy}
+    \begin{itemize}
+        \item<1-> First best result (1964): $\mathsf{Det(\Sigma^0_3)}$ by Davis.
+        \item<2-> The proof can be carried out in $\mathsf{ZC^- + \Sigma_1 Replacement}$.
+        \item<3-> Friedman (1968): Borel determinacy requires existence of $V_{\omega_1}$. 
+    \end{itemize}
 
+    \begin{theorem}[Martin, $\mathsf{ZFC}$]<4>
+        All Borel games are determined.
+    \end{theorem}
+
+\end{frame}
+
+%----------------------------------------------------------------
+
+\begin{frame}{Sketch of the proof}
+    
 \end{frame}
 
 %----------------------------------------------------------------
 
 \section{Inside second order arithmetic}
 
-\begin{frame}{}
+\begin{frame}{A conservation result}
+    \begin{theorem}
+        $\mathsf{ZFC}^-$ is a $\Pi^1_4$ conservative extension of $\mathsf{Z}_2$.    
+    \end{theorem}
     
+    \begin{itemize}
+        \item<2-> We can construct $\mathsf{L(X)}$ in $\mathsf{Z}_2$;
+        \item<3-> We can show in that $\mathsf{Z}_2$ that $\mathsf{L(X)} \models \mathsf{ZFC}^-$;
+        \item<4-> We use Shoenfield Absoluteness theorem ($\mathsf{\Pi_1^1}-CA_0$).
+    \end{itemize}
+
 \end{frame}
 
 %----------------------------------------------------------
 
-\section{Outside}
+\begin{frame}{Some right axioms systems}
+    \begin{theorem}[Steel, Simpson]
+        Over $\mathsf{RCA}_0$, $\mathsf{Det(\Sigma_1^0)}$ is equivalent to $\mathsf{ATR}_0$. 
+    \end{theorem}
 
-\begin{frame}{}
+    \begin{theorem}[Tanaka]
+        $\mathsf{Det(\Sigma_2^0)}$ is equivalent to $\mathsf{\Sigma_1^1-MI}$.
+    \end{theorem}
+\end{frame}
 
+%----------------------------------------------------------
+
+\begin{frame}{How much determinacy can we prove in $\mathsf{Z}_2$?} 
+    \begin{theorem}[Montalb\'an and Shore]
+        $\Pi^1_{n+2}$-$\mathsf{CA}_0 \vdash \mathsf{Det}(n$-$\Pi^0_3)$ but
+        $\Delta^1_{n+2}$-$\mathsf{CA}_0 \not\vdash \mathsf{Det}(n$-$\Pi^0_3)$.
+    \end{theorem}
+    However, $\Pi^1_{n+2}$-$\mathsf{CA}_0$ is not the right set of axioms for 
+    $\mathsf{Det}(n$-$\Pi^0_3)$.
+
+    \begin{theorem}[MedSalem and Tanaka]
+        Borel determinacy does not imply $\Delta^1_2$-$\mathsf{CA}_0$.
+    \end{theorem}
+\end{frame}
+
+%----------------------------------------------------------
+
+\begin{frame}{Reversals}
+ 
+    \begin{theorem}[Hachtman]
+        $\mathsf{Det(\Sigma_3^0)}$ is equivalent to the existence of a $\beta-$model 
+        satisfying $\mathsf{\Pi_1^2-MI}$.
+    \end{theorem}
+
+    \begin{theorem}[Aguilera and Welch]
+        Over $\Pi_1^1$-$\mathsf{CA}_0$, for each $m\in \mathbb{N}$ we have an 
+        equivalence between 
+        \begin{enumerate}
+            \item $\mathsf{Det}(m$-$\Pi_3^0)$,
+            \item Every real belongs to a $\beta$-model of $\Pi_{m+1}^1$-$\mathsf{MI}$.
+        \end{enumerate}
+    \end{theorem}
+\end{frame}
+
+%------------------------------------------------------------------
+
+\section{Back in \texorpdfstring{$\mathsf{ZF}$}{ZF} set theory}
+
+\begin{frame}{Game encoding models}
+    \begin{theorem}[Friedman $<$ Martin $<$ M. and S.]
+        We cannot prove $\mathsf{Det}(\Sigma_0^5)<\mathsf{Det}(\Sigma_0^4)
+        <\mathsf{Det}(\omega$-$\Pi_0^3)$ in $\mathsf{ZCF^-}$ 
+    \end{theorem}
+
+    \begin{itemize}
+        \item<2-> Same technique as for the limitative result of Friedman for 
+            Borel determinacy.
+        \item<3-> The games are deemed to encode fragments of set theory using Gödel numbering.
+    \end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------
+
+\begin{frame}{Sketch of the proof for $\mathsf{Det}(\Sigma_0^4)$}
+    
+\end{frame}
+
+%----------------------------------------------------------------
+
+\begin{frame}{Measurability properties}
+
+    \begin{theorem}[Kechris, Martin]
+        In $\mathsf{ZF + AC}_{\omega}(\omega^{\omega})$, $\mathsf{Det}(\Pi^1_n)$ proves that 
+        every $\Sigma^1_{n+1}$ sets of reals satisfies M1, M2 and M3.
+    \end{theorem}
+
+    \begin{theorem}[Shelah-Woodin]
+        Given $n \in \omega$, if there are $n$ Woodin cardinals with a measurable cardinal above 
+        them, then every $\Sigma^1_{n+2}$ sets of reals satisfies M1, M2 and M3.
+    \end{theorem}
+\end{frame}
+
+%----------------------------------------------------------------
+
+\begin{frame}{Determinacy and high cardinal hypotheses}
+    \begin{theorem}
+        Given $n \in \omega$, if there are $n$ Woodin cardinals with a measurable cardinal above 
+        them, then $\mathsf{Det}(\Pi^1_{n+1})$.
+    \end{theorem}
+
+    \begin{remark}
+        This is a corollary from a theorem of Martin-Steel, which is out of the scope of the 
+        present talk.
+    \end{remark} 
+\end{frame}
+
+%----------------------------------------------------------------
+
+\section{Perspectives and Material}
+
+\begin{frame}
+    
 \end{frame}
 
 %----------------------------------------------------------------
