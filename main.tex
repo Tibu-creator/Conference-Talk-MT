@@ -85,36 +85,27 @@
 
 \begin{frame}{Hobbies}
     \begin{center}
-        \scalebox{0.6}{
+        \scalebox{1}{
             
-        \begin{tikzpicture}
-            \path[mindmap,concept color=yellow!60!orange,text=white]
-            node[concept] {Happy}
-            [clockwise from=0]
-            % note that `sibling angle' can only be defined in
-            % `level 1 concept/.append style={}'
-            child[concept color=green!50!black] {
-                node[concept] {Heart}
-                [clockwise from=0] 
-                child { node[concept] {Travel} }
-                child { node[concept] {Party} }
-                child { node[concept] {Skyrim} }
-                }
-                % note that the `concept color' is passed to the `child'(!)
-                child[concept color=blue, grow=-90] {
-            node[concept] {Body}
-            [clockwise from=-30]
-            child { node[concept] {Gastronomy} }
-            child { node[concept] {Onsen} }
-            child { node[concept] {Climbing} }
+        \begin{tikzpicture}[scale=0.8]
+
+            \def \h {7};
+            \def \f {.7};
+            
+            \foreach \y in  {0,1,2,3,4} {
+                \def \w { \h*\f-\y*\f };
+                \def \v { \y*\f-\h*\f };
+                \draw (\v,\y) -- (\w,\y);
             }
-            child[concept color=red, grow=180] { 
-                node[concept] {Mind} 
-                [clockwise from=-60]
-                child { node[concept] {Logic}}
-                child { node[concept] {Philosophy}}
-                child { node[concept] {Opera}}  
-                };
+            
+            \draw (-\h*\f,0)  -- (0,\h);
+            \draw (\h*\f,0)  -- (0,\h);
+            
+            \node at (0,0) [above] {Mathematics, Philosophy};
+            \node at (0,1) [above] {Music, Art, Opera};
+            \node at (0,2) [above] {Travel, Outdoor};
+            \node at (0,3) [above] {Gastronomy};
+            \node at (0,4) [above] {Onsen};
             \end{tikzpicture}
             }
         \end{center}
@@ -273,14 +264,14 @@
 
 \begin{frame}{Ingretients of the proof for $\mathsf{Det}(\Sigma_0^4)$}
     \begin{itemize}
-        \item I and II are playing $S_I$ and $S_{II}$ with \begin{align*}
+        \item<1-> I and II are playing $S_I$ and $S_{II}$ with \begin{align*}
             S_{I,II} \vdash \mathsf{ZFC}^- + \text{``$V=L_{\beta_0}$''};
         \end{align*}
-        \item Fact: $M_{I,II}$ well founded iff $M_{I,II} \cong L_{\beta_0}$;
-        \item I wins if she plays $L_{\beta_0}$ but looses if he doesn't byt II does;
-        \item The models are countable and characterised by the subsets of $\omega$ they 
+        \item<2-> Fact: $M_{I,II}$ well founded iff $M_{I,II} \cong L_{\beta_0}$;
+        \item<3-> I wins if she plays $L_{\beta_0}$ but looses if he doesn't byt II does;
+        \item<4-> The models are countable and characterised by the subsets of $\omega$ they 
         contain;
-        \item Gödel-Tarski undefinability of truth.
+        \item<5-> Gödel-Tarski undefinability of truth.
     \end{itemize}
 \end{frame}
 

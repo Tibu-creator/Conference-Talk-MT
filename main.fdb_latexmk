@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1671369370 "main.bcf" "main.bbl" "main" 1671370530 0
-  "main.bcf" 1671370529 124445 5465f8a718f62cb1de6a13538a3bc933 "pdflatex"
+["biber main"] 1671383886 "main.bcf" "main.bbl" "main" 1671384600 0
+  "main.bcf" 1671384599 124445 5465f8a718f62cb1de6a13538a3bc933 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1671370523 "c:/Users/thibk/OneDrive/Bureau/Conference-Talk-MT/main.tex" "main.pdf" "main" 1671370530 0
+["pdflatex"] 1671384590 "c:/Users/thibk/OneDrive/Bureau/Conference-Talk-MT/main.tex" "main.pdf" "main" 1671384600 0
   "C:/Users/thibk/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1671354351 81430 c69b6233c6c293a7d1392d9b523a4494 ""
   "C:/Users/thibk/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1670322698 10805036 5247b5355dfb8202db315bb57667428f ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -29,7 +29,6 @@
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmss12.tfm" 1136765053 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmss17.tfm" 1136765053 1320 ed93d62c5f2c16343826001f03341dbc ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmss8.tfm" 1136765053 1296 d77f431d10d47c8ea2cc18cf45346274 ""
-  "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmss9.tfm" 1136765053 1320 49357c421c0d469f88b867dd0c3d10e8 ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmssi10.tfm" 1136765053 1520 ca2bb4b78ac9800bd686e30c6d19ef95 ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
@@ -44,7 +43,6 @@
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1247593066 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb" 1247593067 24416 36515493f76659302880e2604105b074 ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1247593067 24420 52dbb8e8aa0069a1b987309557f8d303 ""
-  "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb" 1247593066 24373 a91d375736817a75026663adcb2190c1 ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1247593066 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247593067 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
@@ -282,14 +280,14 @@
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1622467910 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/thibk/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "c:/Users/thibk/OneDrive/Bureau/Conference-Talk-MT/main.tex" 1671370522 11773 d2dd144c65b5eb0d1e693f80ca6f8a96 ""
-  "main.aux" 1671370529 4894 e18544f688cdaabc519fc9ab3c085320 "pdflatex"
-  "main.bbl" 1671369372 486 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.nav" 1671370529 2756 ec0f2c9969e4a0c1a74f64d5d8391301 "pdflatex"
-  "main.out" 1671370529 773 64441267510b224dcc1ee71fccd6b338 "pdflatex"
-  "main.run.xml" 1671370529 2493 18dd6adf559d62ac41bc607e0ad6ec06 "pdflatex"
-  "main.tex" 1671370522 11773 d2dd144c65b5eb0d1e693f80ca6f8a96 ""
-  "main.toc" 1671370529 323 dbd7d1a0e6973d2cf9b08162e4bf3234 "pdflatex"
+  "c:/Users/thibk/OneDrive/Bureau/Conference-Talk-MT/main.tex" 1671384589 11234 d7b94a835535fc39174ae5070f1fb48e ""
+  "main.aux" 1671384599 4894 be504038f314758b364701320d8fc1ab "pdflatex"
+  "main.bbl" 1671383889 486 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.nav" 1671384599 2756 28ac52354287d5801dc8dcbab14b6609 "pdflatex"
+  "main.out" 1671384599 773 64441267510b224dcc1ee71fccd6b338 "pdflatex"
+  "main.run.xml" 1671384599 2493 18dd6adf559d62ac41bc607e0ad6ec06 "pdflatex"
+  "main.tex" 1671384589 11234 d7b94a835535fc39174ae5070f1fb48e ""
+  "main.toc" 1671384599 323 93f4eaffc769f3205dd2aece7eae6e25 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
