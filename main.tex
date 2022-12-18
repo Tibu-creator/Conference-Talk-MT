@@ -78,7 +78,6 @@
         \item<4-> Master Thesis with Profs. J.P. Aguilera (TU Wien) and T.~Van der Linden (UCLouvain).
         \item<5-> Foundations of mathematics, reverse mathematics, $\beta$-models, determinacy, model theory,
           set theory, surreal numbers, topos theory etc. 
-        \item<6-> (I like logic). 
     \end{itemize}
 \end{frame}
 
@@ -148,7 +147,7 @@
 \begin{frame}{Motivations and applications}
 
     \begin{theorem}[Mycielski-Swierczkowski; Mazur, Banach; Davis]
-        $\mathsf{ZF + AD}$ proves  that every sets of real numbers is Lebesgue measurable (M1), has 
+        $\mathsf{ZF + AD}$ proves  that every set of real numbers is Lebesgue measurable (M1), has 
         the Baire property (M2), and has the perfect set property (M3).
     \end{theorem}
 
@@ -179,15 +178,15 @@
 
 %----------------------------------------------------------------
 
-\begin{frame}{Ingredients of the proof}
+%\begin{frame}{Ingredients of the proof}
 
-\end{frame}
+%\end{frame}
 
 %----------------------------------------------------------------
 
-\begin{frame}{Ingredients of the proof}
+%\begin{frame}{Ingredients of the proof}
     
-\end{frame}
+%\end{frame}
 
 %----------------------------------------------------------------
 
@@ -201,7 +200,7 @@
     \begin{itemize}
         \item<2-> For any $X \subset \mathbb{N}$, we can construct $\mathsf{L(X)}$ in $\mathsf{Z}_2$;
         \item<3-> We can show in $\mathsf{Z}_2$ that $\mathsf{L(X)} \models \mathsf{ZFC}^-$ (Simpson);
-        \item<4-> We use Shoenfield Absoluteness theorem ($\mathsf{\Pi_1^1}-CA_0$).
+        \item<4-> We use Shoenfield Absoluteness theorem ($\mathsf{\Pi_1^1}-\mathsf{CA}_0$).
     \end{itemize}
 
 \end{frame}
@@ -222,13 +221,14 @@
 
 \begin{frame}{How much determinacy can we prove in $\mathsf{Z}_2$?} 
     \begin{theorem}[Montalb\'an and Shore]
-        $\Pi^1_{n+2}$-$\mathsf{CA}_0 \vdash \mathsf{Det}(n$-$\Pi^0_3)$ but
+        $\forall n \in \omega$, $\Pi^1_{n+2}$-$\mathsf{CA}_0 \vdash \mathsf{Det}(n$-$\Pi^0_3)$ but
         $\Delta^1_{n+2}$-$\mathsf{CA}_0 \not\vdash \mathsf{Det}(n$-$\Pi^0_3)$.
     \end{theorem}
+    \pause
     However, $\Pi^1_{n+2}$-$\mathsf{CA}_0$ is not the right set of axioms for 
     $\mathsf{Det}(n$-$\Pi^0_3)$.
 
-    \begin{theorem}[MedSalem and Tanaka]
+    \begin{theorem}[MedSalem and Tanaka]<3->
         Borel determinacy does not imply $\Delta^1_2$-$\mathsf{CA}_0$.
     \end{theorem}
 \end{frame}
@@ -238,11 +238,11 @@
 \begin{frame}{Reversals}
  
     \begin{theorem}[Hachtman]
-        $\mathsf{Det(\Sigma_3^0)}$ (lightface) is equivalent to the existence of a $\beta-$model 
-        satisfying $\mathsf{\Pi_1^2-MI}$.
+        Over $\Pi_1^1$-$\mathsf{CA}_0$, $\mathsf{Det(\Sigma_3^0)}$ (lightface) is equivalent to the existence of a $\beta-$model 
+        satisfying $\mathsf{\Pi_2^1-MI}$.
     \end{theorem}
 
-    \begin{theorem}[Aguilera and Welch]
+    \begin{theorem}[Aguilera and Welch]<2->
         Over $\Pi_1^1$-$\mathsf{CA}_0$, for each $m\in \mathbb{N}$ we have an 
         equivalence between 
         \begin{enumerate}
@@ -254,12 +254,12 @@
 
 %------------------------------------------------------------------
 
-\section{Back in \texorpdfstring{$\mathsf{ZF}$}{ZF} set theory}
+\section{Back in \texorpdfstring{$\mathsf{ZFC}$}{ZFC} set theory}
 
 \begin{frame}{Game encoding models}
     \begin{theorem}[Friedman $<$ Martin $<$ M. and S.]
-        We cannot prove $\mathsf{Det}(\Sigma_0^5)<\mathsf{Det}(\Sigma_0^4)
-        <\mathsf{Det}(\omega$-$\Pi_0^3)$ in $\mathsf{ZFC^-}$ 
+        We cannot prove $\mathsf{Det}(\Sigma_5^0)<\mathsf{Det}(\Sigma_4^0)
+        <\mathsf{Det}(\omega$-$\Pi_3^0)$ in $\mathsf{ZFC^-}$ 
     \end{theorem}
 
     \begin{itemize}
@@ -272,7 +272,16 @@
 %----------------------------------------------------------------
 
 \begin{frame}{Ingretients of the proof for $\mathsf{Det}(\Sigma_0^4)$}
-    
+    \begin{itemize}
+        \item I and II are playing $S_I$ and $S_{II}$ with \begin{align*}
+            S_{I,II} \vdash \mathsf{ZFC}^- + \text{``$V=L_{\beta_0}$''};
+        \end{align*}
+        \item Fact: $M_{I,II}$ well founded iff $M_{I,II} \cong L_{\beta_0}$;
+        \item I wins if she plays $L_{\beta_0}$ but looses if he doesn't byt II does;
+        \item The models are countable and characterised by the subsets of $\omega$ they 
+        contain;
+        \item Gödel-Tarski undefinability of truth.
+    \end{itemize}
 \end{frame}
 
 %----------------------------------------------------------------
