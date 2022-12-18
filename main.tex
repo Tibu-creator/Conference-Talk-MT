@@ -8,6 +8,8 @@
 \usepackage{qtree}
 \usepackage{tikz}
 \usetikzlibrary{trees}
+\usetikzlibrary{mindmap}
+\usepackage{tikzsymbols}
 \usepackage{amsfonts}
 \usepackage{hyperref}
 \usepackage{tabularx}
@@ -44,12 +46,12 @@
 %%%END APA
 
 
-\title[]{Determinacy in and out second order arithmetic}
+\title[Determinacy axioms]{Determinacy in and out second order arithmetic}
 \subtitle[]{An introduction to the proof theoretic strength of the determinacy scale}
-\institute[Proof Theory Conference]{}
+\institute[Proof Theory Conference]{Proof Theory Conference \and UCLouvain}
 \author{Thibaut Kouptchinsky}
 
-\date{December 22, 2022}
+\date{December 20, 2022}
 
 \begin{document}
 
@@ -68,12 +70,59 @@
 
 \section{Who am I?}
 
-\begin{frame}
-    
+\begin{frame}{Academic me}
+    \begin{itemize}
+        \item<1-> Master student at Catholic University of Louvain-la-Neuve (Belgium).
+        \item<2-> Exchange program in Japan at Tohoku University.
+        \item<3-> COLABS program with Professor Takeshi Yamazaki.
+        \item<4-> Master Thesis with Profs. J.P. Aguilera (TU Wien) and T.~Van der Linden (UCLouvain).
+        \item<5-> Foundations of mathematics, reverse mathematics, $\beta$-models, determinacy, model theory,
+          set theory, surreal numbers, topos theory etc. 
+        \item<6-> (I like logic). 
+    \end{itemize}
 \end{frame}
 
+%--------------------------------------------------------
 
-%
+\begin{frame}{Hobbies}
+    \begin{center}
+        \scalebox{0.6}{
+            
+        \begin{tikzpicture}
+            \path[mindmap,concept color=yellow!60!orange,text=white]
+            node[concept] {Happy}
+            [clockwise from=0]
+            % note that `sibling angle' can only be defined in
+            % `level 1 concept/.append style={}'
+            child[concept color=green!50!black] {
+                node[concept] {Heart}
+                [clockwise from=0] 
+                child { node[concept] {Travel} }
+                child { node[concept] {Party} }
+                child { node[concept] {Skyrim} }
+                }
+                % note that the `concept color' is passed to the `child'(!)
+                child[concept color=blue, grow=-90] {
+            node[concept] {Body}
+            [clockwise from=-30]
+            child { node[concept] {Gastronomy} }
+            child { node[concept] {Onsen} }
+            child { node[concept] {Climbing} }
+            }
+            child[concept color=red, grow=180] { 
+                node[concept] {Mind} 
+                [clockwise from=-60]
+                child { node[concept] {Logic}}
+                child { node[concept] {Philosophy}}
+                child { node[concept] {Opera}}  
+                };
+            \end{tikzpicture}
+            }
+        \end{center}
+
+\end{frame}
+
+%--------------------------------------------------------
 \section{Introduction}
 
 \begin{frame}{What is determinacy?}
@@ -104,8 +153,9 @@
     \end{theorem}
 
     \begin{itemize}
-        \item<2-> Study these properties for projective $\Sigma^1_n$ sets in $\omega^{\omega}$. 
-        \item<3-> Are $\Sigma^1_2$, $\Sigma^1_3$, etc sets Lebesgue measurable? 
+        \item<2-> Study these properties for projective $\Sigma^1_n$ sets in $\omega^{\omega}$
+        (Blackwell, 1967).
+        \item<3-> Are $\Sigma^1_2$, $\Sigma^1_3$, etc sets Lebesgue measurable?
         \item<4> Applications in measure theory, descriptive set theory, harmonic analysis, ergodic theory, 
         dynamical systems etc.
     \end{itemize}
@@ -117,7 +167,7 @@
 \begin{frame}{Borel Determinacy}
     \begin{itemize}
         \item<1-> First best result (1964): $\mathsf{Det(\Sigma^0_3)}$ by Davis.
-        \item<2-> The proof can be carried out in $\mathsf{ZC^- + \Sigma_1 Replacement}$.
+        \item<2-> The proof can be carried out in $\mathsf{ZC^- + \Sigma_1 Replacement}$ (Martin).
         \item<3-> Friedman (1968): Borel determinacy requires existence of $V_{\omega_1}$. 
     \end{itemize}
 
@@ -129,7 +179,13 @@
 
 %----------------------------------------------------------------
 
-\begin{frame}{Sketch of the proof}
+\begin{frame}{Ingredients of the proof}
+
+\end{frame}
+
+%----------------------------------------------------------------
+
+\begin{frame}{Ingredients of the proof}
     
 \end{frame}
 
@@ -143,8 +199,8 @@
     \end{theorem}
     
     \begin{itemize}
-        \item<2-> We can construct $\mathsf{L(X)}$ in $\mathsf{Z}_2$;
-        \item<3-> We can show in that $\mathsf{Z}_2$ that $\mathsf{L(X)} \models \mathsf{ZFC}^-$;
+        \item<2-> For any $X \subset \mathbb{N}$, we can construct $\mathsf{L(X)}$ in $\mathsf{Z}_2$;
+        \item<3-> We can show in $\mathsf{Z}_2$ that $\mathsf{L(X)} \models \mathsf{ZFC}^-$ (Simpson);
         \item<4-> We use Shoenfield Absoluteness theorem ($\mathsf{\Pi_1^1}-CA_0$).
     \end{itemize}
 
@@ -182,7 +238,7 @@
 \begin{frame}{Reversals}
  
     \begin{theorem}[Hachtman]
-        $\mathsf{Det(\Sigma_3^0)}$ is equivalent to the existence of a $\beta-$model 
+        $\mathsf{Det(\Sigma_3^0)}$ (lightface) is equivalent to the existence of a $\beta-$model 
         satisfying $\mathsf{\Pi_1^2-MI}$.
     \end{theorem}
 
@@ -203,7 +259,7 @@
 \begin{frame}{Game encoding models}
     \begin{theorem}[Friedman $<$ Martin $<$ M. and S.]
         We cannot prove $\mathsf{Det}(\Sigma_0^5)<\mathsf{Det}(\Sigma_0^4)
-        <\mathsf{Det}(\omega$-$\Pi_0^3)$ in $\mathsf{ZCF^-}$ 
+        <\mathsf{Det}(\omega$-$\Pi_0^3)$ in $\mathsf{ZFC^-}$ 
     \end{theorem}
 
     \begin{itemize}
@@ -215,7 +271,7 @@
 
 %----------------------------------------------------------------
 
-\begin{frame}{Sketch of the proof for $\mathsf{Det}(\Sigma_0^4)$}
+\begin{frame}{Ingretients of the proof for $\mathsf{Det}(\Sigma_0^4)$}
     
 \end{frame}
 
@@ -253,9 +309,20 @@
 \section{Perspectives and Material}
 
 \begin{frame}
-    
+    \begin{itemize}
+        \item<1-> What happens in higher order arithmetic?
+        \item<2-> Set theoretic reversals?
+        \item<3-> Set Theory (Jech), Descriptive Set Theory (Kechris, Moschovakis);
+        \item<4-> Determinacy of Infinitely Long Games (Martin), The Higher Infinite (Martin);
+        \item<5-> SoSOA (Simpson);
+        \item<6-> The limits of determinacy in second-order arithmetic (MS).
+    \end{itemize}
 \end{frame}
 
-%----------------------------------------------------------------
 
+%----------------------------------------------------------------
+\section*{}
+\begin{frame}
+    \huge{Thank you for your attention!}
+\end{frame}
 \end{document}

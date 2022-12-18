@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.6)  16 DEC 2022 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.6)  18 DEC 2022 11:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -767,50 +767,163 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymindmap.code.tex
+File: tikzlibrarymindmap.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen325
+\pgfdecoratedremainingdistance=\dimen326
+\pgfdecoratedinputsegmentcompleteddistance=\dimen327
+\pgfdecoratedinputsegmentremainingdistance=\dimen328
+\pgf@decorate@distancetomove=\dimen329
+\pgf@decorate@repeatstate=\count358
+\pgfdecorationsegmentamplitude=\dimen330
+\pgfdecorationsegmentlength=\dimen331
+)
+\tikz@lib@dec@box=\box105
+)) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/tikzsymbols\tikzsymbols.sty (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-11-02 L3 programming layer (loader) 
+ (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count359
+\l__pdf_internal_box=\box106
+))
+Package: xparse 2022-06-22 L3 Experimental document command parser
+)
+Package: tikzsymbols 2021/12/14 v4.12a Some symbols created using tikz and LaTeX3.
+ (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
+) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen332
+)) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex))
+\l__tikzsymbols_Moai_thickness_dim=\dimen333
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count360
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count361
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count362
+\l__tikzsymbols_Sieb_nr_arguments_int=\count363
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count364
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count365
+\l__tikzsymbols_Backblech_nr_arguments_int=\count366
+\l__tikzsymbols_Ofen_nr_arguments_int=\count367
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count368
+\l__tikzsymbols_Herd_nr_arguments_int=\count369
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count370
+\l__tikzsymbols_Schussel_nr_arguments_int=\count371
+\l__tikzsymbols_Schaler_nr_arguments_int=\count372
+\l__tikzsymbols_Reibe_nr_arguments_int=\count373
+\l__tikzsymbols_Flasche_nr_arguments_int=\count374
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count375
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count376
+\l__tikzsymbols_Sadey_nr_arguments_int=\count377
+\l__tikzsymbols_dSadey_nr_arguments_int=\count378
+\l__tikzsymbols_Changey_nr_arguments_int=\count379
+\l__tikzsymbols_dChangey_nr_arguments_int=\count380
+\l__tikzsymbols_cChangey_nr_arguments_int=\count381
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count382
+\l__tikzsymbols_Annoey_nr_arguments_int=\count383
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count384
+\l__tikzsymbols_Smiley_nr_arguments_int=\count385
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count386
+\l__tikzsymbols_Laughey_nr_arguments_int=\count387
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count388
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count389
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count390
+\l__tikzsymbols_Winkey_nr_arguments_int=\count391
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count392
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count393
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count394
+\l__tikzsymbols_Sey_nr_arguments_int=\count395
+\l__tikzsymbols_dSey_nr_arguments_int=\count396
+\l__tikzsymbols_Xey_nr_arguments_int=\count397
+\l__tikzsymbols_dXey_nr_arguments_int=\count398
+\l__tikzsymbols_Innocey_nr_arguments_int=\count399
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count400
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count401
+\l__tikzsymbols_Cooley_nr_arguments_int=\count402
+\l__tikzsymbols_dCooley_nr_arguments_int=\count403
+\l__tikzsymbols_Tongey_nr_arguments_int=\count404
+\l__tikzsymbols_dTongey_nr_arguments_int=\count405
+\l__tikzsymbols_Nursey_nr_arguments_int=\count406
+\l__tikzsymbols_dNursey_nr_arguments_int=\count407
+\l__tikzsymbols_Vomey_nr_arguments_int=\count408
+\l__tikzsymbols_dVomey_nr_arguments_int=\count409
+\l__tikzsymbols_Walley_nr_arguments_int=\count410
+\l__tikzsymbols_rWalley_nr_arguments_int=\count411
+\l__tikzsymbols_dWalley_nr_arguments_int=\count412
+\l__tikzsymbols_drWalley_nr_arguments_int=\count413
+\l__tikzsymbols_Cat_nr_arguments_int=\count414
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count415
+\l__tikzsymbols_Ninja_nr_arguments_int=\count416
+\l__tikzsymbols_dNinja_nr_arguments_int=\count417
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count418
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count419
+\l__tikzsymbols_Maskey_nr_arguments_int=\count420
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count421
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count422
+\l__tikzsymbols_Person_nr_arguments_int=\count423
+\l__tikzsymbols_Heart_nr_arguments_int=\count424
+\l__tikzsymbols_dHeart_nr_arguments_int=\count425
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count426
+\l__tikzsymbols_Candle_nr_arguments_int=\count427
+\l__tikzsymbols_Fire_nr_arguments_int=\count428
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count429
+\l__tikzsymbols_Chair_nr_arguments_int=\count430
+\l__tikzsymbols_Bed_nr_arguments_int=\count431
+\l__tikzsymbols_Tribar_nr_arguments_int=\count432
+\l__tikzsymbols_Moai_nr_arguments_int=\count433
+\l__tikzsymbols_Snowman_nr_arguments_int=\count434
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count435
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count436
+\l__tikzsymbols_Springtree_nr_arguments_int=\count437
+\l__tikzsymbols_Summertree_nr_arguments_int=\count438
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count439
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count440
 ) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen325
-\ar@mcellbox=\box105
-\extrarowheight=\dimen326
+\col@sep=\dimen334
+\ar@mcellbox=\box107
+\extrarowheight=\dimen335
 \NC@list=\toks53
 \extratabsurround=\skip143
 \backup@length=\skip144
-\ar@cellbox=\box106
+\ar@cellbox=\box108
 )
-\TX@col@width=\dimen327
-\TX@old@table=\dimen328
-\TX@old@col=\dimen329
-\TX@target=\dimen330
-\TX@delta=\dimen331
-\TX@cols=\count358
+\TX@col@width=\dimen336
+\TX@old@table=\dimen337
+\TX@old@col=\dimen338
+\TX@target=\dimen339
+\TX@delta=\dimen340
+\TX@cols=\count441
 \TX@ftn=\toks54
 ) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count359
-\mult@box=\box107
-\multicol@leftmargin=\dimen332
-\c@unbalance=\count360
-\c@collectmore=\count361
-\doublecol@number=\count362
-\multicoltolerance=\count363
-\multicolpretolerance=\count364
-\full@width=\dimen333
-\page@free=\dimen334
-\premulticols=\dimen335
-\postmulticols=\dimen336
+\c@tracingmulticols=\count442
+\mult@box=\box109
+\multicol@leftmargin=\dimen341
+\c@unbalance=\count443
+\c@collectmore=\count444
+\doublecol@number=\count445
+\multicoltolerance=\count446
+\multicolpretolerance=\count447
+\full@width=\dimen342
+\page@free=\dimen343
+\premulticols=\dimen344
+\postmulticols=\dimen345
 \multicolsep=\skip145
 \multicolbaselineskip=\skip146
-\partial@page=\box108
-\last@line=\box109
-\maxbalancingoverflow=\dimen337
-\mult@rightbox=\box110
-\mult@grightbox=\box111
-\mult@firstbox=\box112
-\mult@gfirstbox=\box113
-\@tempa=\box114
-\@tempa=\box115
+\partial@page=\box110
+\last@line=\box111
+\maxbalancingoverflow=\dimen346
+\mult@rightbox=\box112
+\mult@grightbox=\box113
+\mult@firstbox=\box114
+\mult@gfirstbox=\box115
 \@tempa=\box116
 \@tempa=\box117
 \@tempa=\box118
@@ -845,15 +958,17 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box147
 \@tempa=\box148
 \@tempa=\box149
-\c@minrows=\count365
-\c@columnbadness=\count366
-\c@finalcolumnbadness=\count367
-\last@try=\dimen338
-\multicolovershoot=\dimen339
-\multicolundershoot=\dimen340
-\mult@nat@firstbox=\box150
-\colbreak@box=\box151
-\mc@col@check@num=\count368
+\@tempa=\box150
+\@tempa=\box151
+\c@minrows=\count448
+\c@columnbadness=\count449
+\c@finalcolumnbadness=\count450
+\last@try=\dimen347
+\multicolovershoot=\dimen348
+\multicolundershoot=\dimen349
+\mult@nat@firstbox=\box152
+\colbreak@box=\box153
+\mc@col@check@num=\count451
 ) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/epigraph\epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/nextpage\nextpage.sty
@@ -865,13 +980,13 @@ Package: nextpage 2009/09/03 v1.1a additional page commands
 \epigraphrule=\skip150
 ) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeBerlin.sty (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthememiniframes.sty) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerectangles.sty)) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemeprofessionalfonts.sty) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2022/11/30 3.83 The Babel package
-\babel@savecnt=\count369
-\U@D=\dimen341
+\babel@savecnt=\count452
+\U@D=\dimen350
 \l@unhyphenated=\language79
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
 LaTeX Info: Redefining \textlatin on input line 4118.
-\bbl@dirlevel=\count370
+\bbl@dirlevel=\count453
 
 *************************************
 * Local config file bblopts.cfg used
@@ -895,55 +1010,55 @@ Package babel Info: Importing font and identification data for british
 Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count371
+\lrq@indent=\count454
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count372
-\c@listtotal=\count373
-\c@listcount=\count374
-\c@liststart=\count375
-\c@liststop=\count376
-\c@citecount=\count377
-\c@citetotal=\count378
-\c@multicitecount=\count379
-\c@multicitetotal=\count380
-\c@instcount=\count381
-\c@maxnames=\count382
-\c@minnames=\count383
-\c@maxitems=\count384
-\c@minitems=\count385
-\c@citecounter=\count386
-\c@maxcitecounter=\count387
-\c@savedcitecounter=\count388
-\c@uniquelist=\count389
-\c@uniquename=\count390
-\c@refsection=\count391
-\c@refsegment=\count392
-\c@maxextratitle=\count393
-\c@maxextratitleyear=\count394
-\c@maxextraname=\count395
-\c@maxextradate=\count396
-\c@maxextraalpha=\count397
-\c@abbrvpenalty=\count398
-\c@highnamepenalty=\count399
-\c@lownamepenalty=\count400
-\c@maxparens=\count401
-\c@parenlevel=\count402
-\blx@tempcnta=\count403
-\blx@tempcntb=\count404
-\blx@tempcntc=\count405
-\c@blx@maxsection=\count406
-\blx@maxsegment@0=\count407
-\blx@notetype=\count408
-\blx@parenlevel@text=\count409
-\blx@parenlevel@foot=\count410
-\blx@sectionciteorder@0=\count411
-\blx@sectionciteorderinternal@0=\count412
-\blx@entrysetcounter=\count413
-\blx@biblioinstance=\count414
+\c@tabx@nest=\count455
+\c@listtotal=\count456
+\c@listcount=\count457
+\c@liststart=\count458
+\c@liststop=\count459
+\c@citecount=\count460
+\c@citetotal=\count461
+\c@multicitecount=\count462
+\c@multicitetotal=\count463
+\c@instcount=\count464
+\c@maxnames=\count465
+\c@minnames=\count466
+\c@maxitems=\count467
+\c@minitems=\count468
+\c@citecounter=\count469
+\c@maxcitecounter=\count470
+\c@savedcitecounter=\count471
+\c@uniquelist=\count472
+\c@uniquename=\count473
+\c@refsection=\count474
+\c@refsegment=\count475
+\c@maxextratitle=\count476
+\c@maxextratitleyear=\count477
+\c@maxextraname=\count478
+\c@maxextradate=\count479
+\c@maxextraalpha=\count480
+\c@abbrvpenalty=\count481
+\c@highnamepenalty=\count482
+\c@lownamepenalty=\count483
+\c@maxparens=\count484
+\c@parenlevel=\count485
+\blx@tempcnta=\count486
+\blx@tempcntb=\count487
+\blx@tempcntc=\count488
+\c@blx@maxsection=\count489
+\blx@maxsegment@0=\count490
+\blx@notetype=\count491
+\blx@parenlevel@text=\count492
+\blx@parenlevel@foot=\count493
+\blx@sectionciteorder@0=\count494
+\blx@sectionciteorderinternal@0=\count495
+\blx@entrysetcounter=\count496
+\blx@biblioinstance=\count497
 \labelnumberwidth=\skip151
 \labelalphawidth=\skip152
 \biblabelsep=\skip153
@@ -955,9 +1070,9 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read4
 \blx@bcfout=\write5
 \blx@langwohyphens=\language80
-\c@mincomprange=\count415
-\c@maxcomprange=\count416
-\c@mincompwidth=\count417
+\c@mincomprange=\count498
+\c@maxcomprange=\count499
+\c@mincompwidth=\count500
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -970,84 +1085,84 @@ File: apa.dbx 2022/06/22 v9.16 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count418
-\c@savedafterword=\count419
-\c@annotator=\count420
-\c@savedannotator=\count421
-\c@author=\count422
-\c@savedauthor=\count423
-\c@bookauthor=\count424
-\c@savedbookauthor=\count425
-\c@commentator=\count426
-\c@savedcommentator=\count427
-\c@editor=\count428
-\c@savededitor=\count429
-\c@editora=\count430
-\c@savededitora=\count431
-\c@editorb=\count432
-\c@savededitorb=\count433
-\c@editorc=\count434
-\c@savededitorc=\count435
-\c@foreword=\count436
-\c@savedforeword=\count437
-\c@holder=\count438
-\c@savedholder=\count439
-\c@introduction=\count440
-\c@savedintroduction=\count441
-\c@namea=\count442
-\c@savednamea=\count443
-\c@nameb=\count444
-\c@savednameb=\count445
-\c@namec=\count446
-\c@savednamec=\count447
-\c@translator=\count448
-\c@savedtranslator=\count449
-\c@shortauthor=\count450
-\c@savedshortauthor=\count451
-\c@shorteditor=\count452
-\c@savedshorteditor=\count453
-\c@narrator=\count454
-\c@savednarrator=\count455
-\c@execproducer=\count456
-\c@savedexecproducer=\count457
-\c@execdirector=\count458
-\c@savedexecdirector=\count459
-\c@with=\count460
-\c@savedwith=\count461
-\c@labelname=\count462
-\c@savedlabelname=\count463
-\c@institution=\count464
-\c@savedinstitution=\count465
-\c@lista=\count466
-\c@savedlista=\count467
-\c@listb=\count468
-\c@savedlistb=\count469
-\c@listc=\count470
-\c@savedlistc=\count471
-\c@listd=\count472
-\c@savedlistd=\count473
-\c@liste=\count474
-\c@savedliste=\count475
-\c@listf=\count476
-\c@savedlistf=\count477
-\c@location=\count478
-\c@savedlocation=\count479
-\c@organization=\count480
-\c@savedorganization=\count481
-\c@origlocation=\count482
-\c@savedoriglocation=\count483
-\c@origpublisher=\count484
-\c@savedorigpublisher=\count485
-\c@publisher=\count486
-\c@savedpublisher=\count487
-\c@language=\count488
-\c@savedlanguage=\count489
-\c@origlanguage=\count490
-\c@savedoriglanguage=\count491
-\c@citation=\count492
-\c@savedcitation=\count493
-\c@pageref=\count494
-\c@savedpageref=\count495
+\c@afterword=\count501
+\c@savedafterword=\count502
+\c@annotator=\count503
+\c@savedannotator=\count504
+\c@author=\count505
+\c@savedauthor=\count506
+\c@bookauthor=\count507
+\c@savedbookauthor=\count508
+\c@commentator=\count509
+\c@savedcommentator=\count510
+\c@editor=\count511
+\c@savededitor=\count512
+\c@editora=\count513
+\c@savededitora=\count514
+\c@editorb=\count515
+\c@savededitorb=\count516
+\c@editorc=\count517
+\c@savededitorc=\count518
+\c@foreword=\count519
+\c@savedforeword=\count520
+\c@holder=\count521
+\c@savedholder=\count522
+\c@introduction=\count523
+\c@savedintroduction=\count524
+\c@namea=\count525
+\c@savednamea=\count526
+\c@nameb=\count527
+\c@savednameb=\count528
+\c@namec=\count529
+\c@savednamec=\count530
+\c@translator=\count531
+\c@savedtranslator=\count532
+\c@shortauthor=\count533
+\c@savedshortauthor=\count534
+\c@shorteditor=\count535
+\c@savedshorteditor=\count536
+\c@narrator=\count537
+\c@savednarrator=\count538
+\c@execproducer=\count539
+\c@savedexecproducer=\count540
+\c@execdirector=\count541
+\c@savedexecdirector=\count542
+\c@with=\count543
+\c@savedwith=\count544
+\c@labelname=\count545
+\c@savedlabelname=\count546
+\c@institution=\count547
+\c@savedinstitution=\count548
+\c@lista=\count549
+\c@savedlista=\count550
+\c@listb=\count551
+\c@savedlistb=\count552
+\c@listc=\count553
+\c@savedlistc=\count554
+\c@listd=\count555
+\c@savedlistd=\count556
+\c@liste=\count557
+\c@savedliste=\count558
+\c@listf=\count559
+\c@savedlistf=\count560
+\c@location=\count561
+\c@savedlocation=\count562
+\c@organization=\count563
+\c@savedorganization=\count564
+\c@origlocation=\count565
+\c@savedoriglocation=\count566
+\c@origpublisher=\count567
+\c@savedorigpublisher=\count568
+\c@publisher=\count569
+\c@savedpublisher=\count570
+\c@language=\count571
+\c@savedlanguage=\count572
+\c@origlanguage=\count573
+\c@savedoriglanguage=\count574
+\c@citation=\count575
+\c@savedcitation=\count576
+\c@pageref=\count577
+\c@savedpageref=\count578
 \shorthandwidth=\skip159
 \shortjournalwidth=\skip160
 \shortserieswidth=\skip161
@@ -1071,19 +1186,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
-\c@textcitecount=\count496
-\c@textcitetotal=\count497
-\c@textcitemaxnames=\count498
-\c@biburlbigbreakpenalty=\count499
-\c@biburlbreakpenalty=\count500
-\c@biburlnumpenalty=\count501
-\c@biburlucpenalty=\count502
-\c@biburllcpenalty=\count503
+\c@textcitecount=\count579
+\c@textcitetotal=\count580
+\c@textcitemaxnames=\count581
+\c@biburlbigbreakpenalty=\count582
+\c@biburlbreakpenalty=\count583
+\c@biburlnumpenalty=\count584
+\c@biburlucpenalty=\count585
+\c@biburllcpenalty=\count586
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count504
+\c@smartand=\count587
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
@@ -1093,8 +1208,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count505
-\c@bbx:relatedtotal=\count506
+\c@bbx:relatedcount=\count588
+\c@bbx:relatedtotal=\count589
 )
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defined, overwriting.
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already defined, overwriting.
@@ -1130,20 +1245,11 @@ File: biblatex.cfg
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-11-02 L3 programming layer (loader) 
- (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count507
-\l__pdf_internal_box=\box152
-))
 Package biblatex Info: ... and expl3
 (biblatex)             2022-11-02 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
-Package: xparse 2022-06-22 L3 Experimental document command parser
-)
+ (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 Package csquotes Info: Checking for multilingual support...
@@ -1153,24 +1259,24 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1208,16 +1314,16 @@ LaTeX Font Info:    ... okay on input line 54.
 
 (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count508
-\scratchdimen=\dimen342
-\scratchbox=\box153
-\nofMPsegments=\count509
-\nofMParguments=\count510
+\scratchcounter=\count590
+\scratchdimen=\dimen351
+\scratchbox=\box154
+\nofMPsegments=\count591
+\nofMParguments=\count592
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count511
-\MPscratchDim=\dimen343
-\MPnumerator=\count512
-\makeMPintoPDFobject=\count513
+\MPscratchCnt=\count593
+\MPscratchDim=\dimen352
+\MPnumerator=\count594
+\makeMPintoPDFobject=\count595
 \everyMPtoPDFconversion=\toks56
 ) (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1225,7 +1331,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 56.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1281,14 +1387,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 54.
-Package biblatex Info: Reference segment=0 on input line 54.
+Package biblatex Info: Reference section=0 on input line 56.
+Package biblatex Info: Reference segment=0 on input line 56.
  (main.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
  (C:\Users\thibk\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{C:/Users/thibk/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
@@ -1297,12 +1403,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [3
 
-]
-Overfull \hbox (14.23471pt too wide) in paragraph at lines 95--95
-[][]  
- []
-
-[4
+] [4
 
 ] [5
 
@@ -1312,9 +1413,19 @@ Overfull \hbox (14.23471pt too wide) in paragraph at lines 95--95
 
 ] [8
 
-] [9
+]
+Overfull \hbox (3.61633pt too wide) in paragraph at lines 123--123
+ [][][]\OT1/cmss/m/n/9 Gastronomy[] 
+ []
 
-] [10
+[9
+
+]
+Overfull \hbox (14.23471pt too wide) in paragraph at lines 144--144
+[][]  
+ []
+
+[10
 
 ] [11
 
@@ -1350,6 +1461,32 @@ Overfull \hbox (14.23471pt too wide) in paragraph at lines 95--95
 
 ] [27
 
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
 ]
 \tf@nav=\write7
 \openout7 = `main.nav'.
@@ -1362,23 +1499,23 @@ Overfull \hbox (14.23471pt too wide) in paragraph at lines 95--95
 
  (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 34C9796F1F0010E1ED362B41CB38B995;733.
+(rerunfilecheck)             Checksum: DB16A0AC6EB61D9AF08C538E70290C34;768.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35592 strings out of 475281
- 719400 string characters out of 2774065
- 1571069 words of memory out of 3000000
- 56354 multiletter control sequences out of 15000+600000
- 479924 words of font info for 69 fonts, out of 8000000 for 9000
+ 37692 strings out of 475281
+ 777359 string characters out of 2774065
+ 1667744 words of memory out of 3000000
+ 58393 multiletter control sequences out of 15000+600000
+ 480843 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,1179b,8639s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (27 pages, 421088 bytes).
+<C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (40 pages, 603879 bytes).
 PDF statistics:
- 1364 PDF objects out of 1440 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2102 PDF objects out of 2487 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
