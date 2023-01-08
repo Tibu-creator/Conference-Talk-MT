@@ -1,6 +1,4 @@
 \babel@toc {british}{}\relax 
-\beamer@sectionintoc {1}{Who am I?}{3}{0}{1}
-\beamer@sectionintoc {2}{Introduction}{9}{0}{2}
-\beamer@sectionintoc {3}{Inside second order arithmetic}{18}{0}{3}
-\beamer@sectionintoc {4}{Back in $\mathsf {ZFC}$ set theory}{28}{0}{4}
-\beamer@sectionintoc {5}{Perspectives and Material}{38}{0}{5}
+\beamer@sectionintoc {1}{A tool of descriptive set theory}{3}{0}{1}
+\beamer@sectionintoc {2}{The theorem of Wolfe as a warm up}{12}{0}{2}
+\beamer@sectionintoc {3}{Determinacy of $\Pi ^0_3$ Differences}{15}{0}{3}
