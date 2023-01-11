@@ -89,6 +89,12 @@
 
 %----------------------------------------------------------------
 
+\begin{frame}{The Borel and projective hierarchy}
+    
+\end{frame}
+
+%----------------------------------------------------------------
+
 \begin{frame}{Motivations and applications}
 
     \begin{theorem}[Mycielski-Swierczkowski; Mazur, Banach; Davis]
@@ -125,7 +131,7 @@
 
 \section{The theorem of Wolfe as a warm up}
 
-\begin{frame}
+\begin{frame}{The theorem of Wolfe}
     \begin{theorem}[$\mathsf{ZC}^- + \Sigma_1$-\textsc{Replacement}]
         All $\Sigma^0_2$ games are determined.\label{Sigma2Det}
     \end{theorem}
@@ -134,6 +140,113 @@
 %----------------------------------------------------------
 
 \begin{frame}
+    \begin{definition}[Player I's strategies]
+        Given $G(T, X)$, a strategy $S_{I}$ is a subtree of $T$ such that \begin{enumerate}
+            \item<2-> Every even-length node has one unique child,
+            \item<3-> Every child of an odd-length node that lies in $T$ lies also in the strategy,
+        \end{enumerate}
+        \pause
+        \pause
+        \pause
+        A strategy $S$ is said to be winning if $[S] \subseteq X$.
+    \end{definition}
+    \pause 
+    In a quasistrategy the player's response has not to be unique.
+\end{frame}
+
+%----------------------------------------------------------
+
+\begin{frame}{Example: A binary game}
+    \scalebox{0.75}
+    {
+    \begin{tikzpicture}
+        \begin{scope}[shift={(-10,10)}]
+                    \Tree [.{$\langle \ \rangle$} 
+                        [.{$\langle 0 \rangle$} [.{$\langle 00 \rangle$} 
+                            [.{$\langle 000 \rangle$} {$\cdots$} {$\cdots$} ] 
+                            [.{$\langle 001 \rangle$} {$\cdots$} {$\cdots$} ] ] 
+                        [.{$\langle 01 \rangle$} 
+                            [.{$\langle 010 \rangle$} {$\cdots$} {$\cdots$} ] 
+                            [.{$\langle 011 \rangle$} {$\cdots$} {$\cdots$} ] ] ] 
+                        [.{$\langle 1 \rangle$} [.{$\langle 10 \rangle$} 
+                            [.{$\langle 100 \rangle$} {$\cdots$} {$\cdots$} ] 
+                            [.{$\langle 101 \rangle$} {$\cdots$} {$\cdots$} ] ]
+                        [.{$\langle 11 \rangle$} 
+                            [.{$\langle 110 \rangle$} {$\cdots$} {$\cdots$} ] 
+                            [.{$\langle 111 \rangle$} {$\cdots$} {$\cdots$} ] ] ].{$\langle 1 \rangle$} ]
+                \end{scope}
+        \end{tikzpicture}
+        }
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+\end{frame}
+
+%----------------------------------------------------------
+
+\begin{frame}{Strategy and quasistrategy}
+    \scalebox{0.75}{
+        \begin{tikzpicture}[]
+            \begin{scope}[]
+                \Tree [.{$\langle \ \rangle$} [.{$\langle 0 \rangle$} [.{$\langle 00 \rangle$} 
+                [.{$\langle 000 \rangle$} [
+                    [.{$\langle 0000 \rangle$} {$\cdots$} {$\cdots$} ]
+                    [.{$\langle 0001 \rangle$} {$\cdots$} {$\cdots$} ] ] ] 
+                [.{$\langle 001 \rangle$} [
+                    [.{$\langle 0010 \rangle$} {$\cdots$} {$\cdots$} ]
+                    [.{$\langle 0011 \rangle$} {$\cdots$} {$\cdots$} ] ] ] ] 
+                [.{$\langle 01 \rangle$} 
+                [.{$\langle 010 \rangle$} [
+                    [.{$\langle 0100 \rangle$} {$\cdots$} {$\cdots$} ]
+                    [.{$\langle 0101 \rangle$} {$\cdots$} {$\cdots$} ] ] ]
+                [.{$\langle 011 \rangle$} [
+                    [.{$\langle 0110 \rangle$} {$\cdots$} {$\cdots$} ]
+                    [.{$\langle 0111 \rangle$} {$\cdots$} {$\cdots$} ] ] ] ] 
+                ] ]
+            \end{scope}
+        \end{tikzpicture}
+    }
+        
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+
+        \phantom{a}
+\end{frame}
+
+%----------------------------------------------------------
+
+\begin{frame}{A technical lemma}
     \begin{lemma}
         Let $B \subseteq A \subseteq [T]$ with $B$ being closed. If player I has no winning strategy in the 
         game $G(T,A)$, then there is a strategy $\tau$ for II such that every $x \in [\tau]$ has a finite 
@@ -146,13 +259,22 @@
 %----------------------------------------------------------
 
 \begin{frame}{Proof of the theorem of Wolfe}
-    
+    \begin{align*}
+        A = \bigcup_{i < \omega} A_i, \qquad A_i \text{ closed in } [T];
+    \end{align*}
+    \begin{itemize}
+        \item<2-> Suppose $G(T,A)$ is not a win for I\@;
+        \item<3-> Apply the lemma for $B = A_0$ to get $\tau_0 \subset T$ and $p_0$;
+        \item<4-> Apply the lemma for $B = A_{n+1}$ to get $\tau_{n+1} \subset T_{p_{n}}$ and $p_{n+1}$;
+        \item<5-> \dots
+        \item<6-> Our $\tau$ avoid all the $A_i$ and hence is winning for II\@.
+    \end{itemize}
 \end{frame}
 
 %----------------------------------------------------------
 
 
-\section{Determinacy of $\Pi^0_3$ Differences}
+\section{Determinacy of \texorpdfstring{$\Pi^0_3$}{Pi03} Differences}
 \begin{frame}{} 
     \begin{theorem}[Montalb\'an and Shore]
         $\forall n \in \omega$, $\Pi^1_{n+2}$-$\mathsf{CA}_0 \vdash \mathsf{Det}(n$-$\Pi^0_3)$
@@ -164,6 +286,44 @@
     \begin{theorem}[MedSalem and Tanaka]<3->
         Borel determinacy does not imply $\Delta^1_2$-$\mathsf{CA}_0$.
     \end{theorem}
+    \pause
+    \pause
+    $\mathsf{Det}(n$-$\Pi^0_3)$ is the $\Pi^1_3$ sentence
+    \begin{align*}
+        \forall X \ \exists Y \ \forall Z \ (X \in n\text{-}\Pi^0_3) \rightarrow \begin{cases}
+            Y \in S_I \land Z \in S_{II} \rightarrow Y \bigoplus Z \in X;
+            \\  Y \in S_{II} \land Z \in S_{I} \rightarrow Z \bigoplus Y \in X.
+        \end{cases}
+    \end{align*}
+\end{frame}
+
+%------------------------------------------------------------------
+
+\begin{frame}
+    Consider $\emptyset = A_m \subseteq \dots \subseteq A_1 \subseteq A_0$, $\Pi_0^3$ sets.
+
+    \begin{align*}
+        A_i = \bigcap_{k < \omega} A_{i,k} \qquad \text{ and } \qquad A_{i,k} = \bigcup_{j < \omega} A_{i, k, j}.
+    \end{align*}
+\end{frame}
+%----------------------------------------------------------
+
+\begin{frame}
+    \begin{definition}
+        Assume $0 \leq k < \omega$.
+        \begin{enumerate}
+            \item<2-> $\Sigma^1_k$-$\mathsf{DC}_0$: \begin{align*}
+                \forall n \ \forall X \ \exists Y \ \eta(n, X, Y) \rightarrow \exists Z \ \forall n \ \eta(n, {(Z)}^n, {(Z)}_n). 
+            \end{align*}
+            \item<3-> Strong $\Sigma^1_k$-$\mathsf{DC}_0$: \begin{align*}
+                \exists Z \ \forall n \ \forall Y \ (\eta(n, {(Z)}^n, Y) \rightarrow \eta(n, {(Z)}^n, {(Z)}_n)).
+            \end{align*}
+        \end{enumerate}
+    \end{definition}
+    \pause
+    \pause
+    \pause
+    Strong $\Sigma^1_{m+2}$-$\mathsf{DC}_0$ is $\Pi^1_4$ conservative over $\Pi^1_{m+2}$-$\mathsf{CA}_0$.
 \end{frame}
 
 %----------------------------------------------------------
@@ -172,37 +332,40 @@
     \begin{definition}
         We define $\Sigma_{|s|+2}^1$ relations $P^s(S)$ by induction on $|s| \leq m$:
         \begin{itemize}
-            \item When $|s|=0$, $P^{\emptyset}(S)$ iff \begin{align}
-                &\text{I (II) has a winning strategy in } G(A,S) \text{ if } l \text{ is even (odd)}.\label{base}
-            \end{align}
-            \item For $|s|=n+1$ and $l$ is even, $P^{s}(S)$ iff there is a quasistrategy $U$ for I in $S$ such 
-            that \begin{align}
+            \item<2-> When $|s|=0$, $P^{\emptyset}(S)$ iff \begin{align*}
+                &G(A,S) \text{ is a win for I if } l \coloneq m-|s| \text{ is even }.
+            \end{align*}
+            \item<3-> For $|s|=n+1$ and $l$ is even, $P^{s}(S)$ iff there is a quasistrategy $U$ for I in $S$ such 
+            that \begin{align*}
                 [U] \subseteq A \cup A_{l, s(n)} \qquad \text{and} \qquad 
-                P^{s[n]}(U) \text{ fails}.\label{even}
-            \end{align}
-            \item For $|s|=n+1$ and $l$ is odd, $P^{s}(S)$ iff there is a quasistrategy $U$ for II in $S$ such 
-            that \begin{align}
-                [U] \subseteq \Bar{A} \cup A_{l, s(n)} \qquad \text{and} \qquad
-                P^{s[n]}(U) \text{ fails}.\label{odd}
-            \end{align}  
+                P^{s[n]}(U) \text{ fails}.
+            \end{align*}
         \end{itemize}
-        A quasistrategy $U$ witnesses $P^{s}(S)$ if $U$ is as required in the appropriate clause, the latter being 
-        a $\Pi_{|s|+1}^1$ sentence.\label{P}
     \end{definition}
+    \pause 
+    \pause
+    \pause
+    A quasistrategy $U$ witnesses $P^{s}(S)$ if $U$ is as required in the appropriate clause, the latter being 
+    a $\Pi_{|s|+1}^1$ sentence.
 \end{frame}
 
 %------------------------------------------------------------------
 
 \begin{frame}
     \begin{definition}
-        A quasistrategy $U$ locally witnesses $P^s(S)$ if $|s| = n+1$ and $U$ is a quasistrategy for I (II) if 
-        $l$ is even (odd) and there is $D \subseteq S$ such that, for every $d \in D$, there is a quasistrategy 
-        $R^d$ for II (I) if $l$ is even (odd) in $S_d$ such that the following conditions are satisfied:
+        A quasistrategy $U$ for I locally witnesses $P^s(S)$ if $|s| = n+1$ and 
+        $l$ is even if:  
+        $\exists D \subseteq S \ \forall d \in D$, there is a quasistrategy 
+        $R^d$ for II in $S_d$ such that:
         \begin{enumerate}
-            \item $\forall d \in D\cap U$, \ $U_d \cap R^d$ witnesses $P^s(R^d)$.
-            \item $[U] \setminus \bigcup_{d \in D} [R^d] \subseteq A \ (\text{resp. }\Bar{A})$.
-            \item $\forall p \in S \ \exists^{\leq 1} d \in D, \ d \subseteq p \land p \in R^d$.
+            \item<2-> $\forall d \in D\cap U$, \ $U_d \cap R^d$ witnesses $P^s(R^d)$.
+            \item<3-> $[U] \setminus \bigcup_{d \in D} [R^d] \subseteq A$.
+            \item<4-> $\forall p \in S \ \exists^{\leq 1} d \in D, \ d \subseteq p \land p \in R^d$.
         \end{enumerate}
+        \pause
+        \pause
+        \pause
+        \pause
         We observe that ``$U$ locally witnesses $P^s(S)$'' is a $\Sigma_{|s|+2}^1$ sentence.
     \end{definition}
 \end{frame}
@@ -218,7 +381,22 @@
 %----------------------------------------------------------------
 
 \begin{frame}{Proof of lemma 1}
-    
+        \begin{itemize} 
+            \item<1-> First clause ``$[U] \subseteq A \cup A_{l, s(n)}$'' follows from $1$ and $2$.
+            \item<2-> $|s| = n+1 \leq m$, $n=0$: \begin{itemize}
+                \item<3-> Suppose $P^{\emptyset}(U)$ holds, there is $\tau$ winning for II\@. 
+                \item<4-> $2$ and $3$ implies $\exists d \in D \cap \tau \ \forall x \supset d \ x \in [\tau] \rightarrow 
+                x \in [R^d]$. 
+                \item<5-> So $\tau_d$ is winning for II in $G(U_d \cap R^d, A)$, contradiction.
+            \end{itemize} 
+            \item<6-> By induction hypothesis we have to build for $n>1$, $\Hat{U}$, $\Hat{D}$ and 
+            $\{\Hat{R}^d : d \in \Hat{D}\}$ locally witnessing $P^{s[n-1]}(\hat{S})$.
+            \item<7-> We want to define $\hat{U}$ such that $\hat{U}$ falls out of the $R^d$ and 
+            hence ends up in $A$ (we suppose $m-n$ odd). 
+            \item<8-> We use $\Sigma^1_{|s|}$-$\mathsf{AC}_0$ to pick up witnesses for $P^{s[n-1]}(\hat{R}^d)$
+            which will be our $\hat{U}_d \cap \hat{R}^d$.
+
+        \end{itemize}
 \end{frame}
 
 %----------------------------------------------------------
@@ -229,8 +407,8 @@
         We say that $P^s(S)$ fails everywhere if $P^s(S_p)$ fails for every $p \in S$. This is a $\Pi^1_{|s|+2}$ 
         sentence.
     \end{definition}
-    \begin{lemma}[2]
-        If $P^s(S)$ fails, then there is a quasistrategy $W$ for I (II) if $l$ is odd (even) in $S$ such that 
+    \begin{lemma}[2]<2->
+        If $P^s(S)$ fails, then there is a quasistrategy $W$ for I if $l$ is odd in $S$ such that 
         $P^s(W)$ fails everywhere.\label{failure}
     \end{lemma}
 \end{frame}
@@ -238,7 +416,23 @@
 %----------------------------------------------------------------
 
 \begin{frame}{Proof of lemma 2}
-    
+    \begin{itemize}
+        \item<1-> $|s| = 0$, then II does not have winning strategy and we take I's non-loosing 
+        quasistrategy as $W$ (Using $\Pi^1_2$-$\mathsf{CA}_0$).
+        \item<2-> $|s| = n + 1$ (and $l$ even), we use  $\Pi^1_{|s|+2}$-$\mathsf{CA}_0$ to set
+        \begin{align*}
+            d \in D \leftrightarrow d \in S \land P^s(S_d) \land \lnot P^s(S_{d[|d|-1]}). \quad 
+            \text{($d$ is minimal)}
+        \end{align*}
+        \item<3-> We will use $\Sigma^1_{|s|}$-$\mathsf{AC}_0$ to chose a witness $U^d$.
+        \item<4-> We now consider the game $G(S,B)$ where 
+        \begin{align*}
+            B = \{x \in [S] \mid \exists d \in D \ d \subseteq x\}.
+        \end{align*}
+        \item<5-> Using preceding lemma, $G(S,B)$ is not a win for I.
+        \item<6-> Again we define $W$ as non-losing II's quasistrategy (and use preceding lemma to 
+        show it is as required).
+    \end{itemize}
 \end{frame}
 
 %----------------------------------------------------------
@@ -246,7 +440,7 @@
 \begin{frame}
     \begin{definition}
         For $|s| = n+1$, $W$ strongly witnesses $P^s(S)$ if, for all $p \in W$, $W_p$ witnesses $P^s(S_p)$, that 
-        is, $W$ witnesses $P^s(S)$ and $P^{s[n]}(W)$ fails everywhere. This is a $\Pi_{|s+1|^1}$ 
+        is, $W$ witnesses $P^s(S)$ and $P^{s[n]}(W)$ fails everywhere. This is a $\Pi^1_{|s+1|}$ 
         sentence.
     \end{definition}
 \end{frame}
@@ -262,7 +456,13 @@
 %----------------------------------------------------------------
 
 \begin{frame}{Proof of lemma 3}
-    
+    Take $U$ such that
+    \begin{align*}
+        [U] \subseteq A \cup A_{l, s(n)} \qquad \text{and} \qquad 
+        P^{s[n]}(U) \text{ fails}.
+    \end{align*}
+    \pause
+    Apply preceding lemma to get a $W$ such $P^{s[n]}(W)$ fails everywhere.
 \end{frame}
 
 %----------------------------------------------------------
@@ -276,14 +476,66 @@
 %----------------------------------------------------------------
 
 \begin{frame}{Proof of lemma 4}
-    
+    \begin{itemize}
+        \item<1-> Reverse induction on $n < m$, $m-n$ odd, suppose $P^s(S)$ fails. 
+        \item<2-> Using strong $\Sigma^1_{m+2}$-$\mathsf{DC}_0$, we define by induction a quasistrategy 
+        $U$ for II in $S$ along with $D \subseteq S$ and $R^d$ for $d \in D$ showing that \begin{align*}
+            U \text{ (locally) witnesses } P^{s[n]}(S) \text{ if } (n > 0) \ n=0.
+        \end{align*}
+        \item<3-> The method to ensure $x \in [U] \setminus_{d \in D} R^d$ implies $x \in \Bar{A}$ is as 
+        follow: \begin{enumerate}
+            \item<4-> We define $U$ such that $x \in \Bar{A} \cup A_{m-n-2, j}$, $\forall j < \omega$ such that 
+            $x \not\in \Bar{A} \cup A_{m-n-2, }$.
+            \item<5-> We make sure $x \not \in A_{m-n-1,s(n),j}$, $\forall j < \omega$ such that
+            $x \not \in A_{m-n-1}$.
+            \item<6-> We then use $\Bar{A} \cup A_{m-n-2} \setminus A_{m-n-1} \subseteq \Bar{A}$.
+        \end{enumerate}
+    \end{itemize} 
 \end{frame}
 
 %----------------------------------------------------------
 
 \begin{frame}{Proof of the theorem}
-    
+    \begin{itemize}
+        \item<1-> Suppose $m$ is odd and $G(A,T)$ is not a win for II\@; $P^{\emptyset}(T)$ fails.
+        \item<2-> Take $W^{\emptyset}$ such that $P^{\emptyset}(W^{\emptyset})$ fails everywhere.
+        \item<3-> We define a quasistrategy $U$ for I in $W^{\emptyset}$ by induction on $|p|$ for $p \in U$.
+        In the same time, we use strong $\Sigma^1_3$-$\mathsf{DC}_0$ to define for $|p| = j+1$ a quasistrategy $W^p$ 
+        for I such that \begin{align*}
+            W^p \text{ strongly witnesses } P^{\langle j \rangle}(W^{p[j] }_p).
+        \end{align*}
+    \end{itemize}
 \end{frame}
+
+%----------------------------------------------------------
+
+\begin{frame}{Proof of the theorem}
+    \begin{itemize}
+        \item<1-> Suppose then $p \in U$, $|p| = j+1$ and 
+        $W^{p}$ has been defined. The child $q$ of $p$ in $U$ are those of $p$ in $W^p$.
+        \item<2-> $P^{\emptyset}(W^p)$ fails everywhere and so, 
+        \begin{align*} 
+            P^{\emptyset}(W^p_q) \text{  fails for each child $q$ of $p$ in $U$.} 
+        \end{align*}
+        \item<3-> By preceding lemma $P^{\langle j \rangle}(W^p_q)$ and we choose a $W^q$ 
+        that strongly witnesses it.
+    \end{itemize}
+\end{frame}
+%----------------------------------------------------------
+
+\begin{frame}
+    Consider any play $x \in [U]$.
+    \begin{itemize}
+        \item<2->  For all $j$, \begin{align*}
+            \forall j \ x \in [W^{x[j+1]}], \text{ which witnesses } P^{\langle j \rangle}.
+        \end{align*}
+        \item<3-> Then $\forall j \ x \in A \cup A_{m-1, j}$,
+        \item<4-> But $\bigcap_{j < \omega} A_{m-1, j} = A_{m-1} \subseteq A$.
+    \end{itemize}    
+\end{frame}
+    
+
+%----------------------------------------------------------
 
 \section*{}
 \begin{frame}

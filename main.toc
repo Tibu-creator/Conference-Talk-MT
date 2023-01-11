@@ -1,4 +1,4 @@
 \babel@toc {british}{}\relax 
 \beamer@sectionintoc {1}{A tool of descriptive set theory}{3}{0}{1}
-\beamer@sectionintoc {2}{The theorem of Wolfe as a warm up}{12}{0}{2}
-\beamer@sectionintoc {3}{Determinacy of $\Pi ^0_3$ Differences}{15}{0}{3}
+\beamer@sectionintoc {2}{The theorem of Wolfe as a warm up}{13}{0}{2}
+\beamer@sectionintoc {3}{Determinacy of $\Pi ^0_3$ Differences}{28}{0}{3}
