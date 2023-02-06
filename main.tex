@@ -70,10 +70,8 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
          \begin{enumerate}
             \item<1-> The set of natural numbers: $\mathbb{N} = \{0, 1, 2, 3, \dots, 2^{82,589,933}-1, \dots \}$.
             \item<2-> The graph of the function $\sin \colon \mathbb{R} \to \mathbb{R}$: $\{(x,\sin(x)) : x \in \mathbb{R}\}$.
-            \item<3-> The set of the subsets of the complex number $\mathcal{P}(\mathbb{C}) = \{A : A \subseteq \mathbb{C}\}$.
         \end{enumerate}
     \end{example}
-    \pause 
     \pause 
     \pause 
     A counter-example, the Russel's Paradox: \begin{align*}
@@ -88,14 +86,12 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
 \begin{frame}{The axioms of $\mathsf{ZF}$}
     \begin{enumerate}
         \item<1-> There exists a set and this set is empty; $\emptyset$.
-        \item<2-> \textsc{Extensionality} Two sets are equal if they have the same elements.
-        \item<3-> \textsc{Pair} If $a$ and $b$ are sets, we can form $\{a,b\}$.
-        \item<4-> \textsc{Separation} If $P$ is property and $X$ is a set, we can form \begin{align*}
+        \item<2-> \textsc{Pair}: If $a$ and $b$ are sets, we can form $\{a,b\}$.
+        \item<3-> \textsc{Separation}: If $P$ is property and $X$ is a set, we can form \begin{align*}
             \{u \in X \mid P(u)\}.    
         \end{align*}
-        \item<5-> \textsc{Infinity} There exists an infinite set.
-        \item<6-> \textsc{Power Set} If $X$ is a set, we can form $\mathcal{P}(X)$
-        \item<7-> plus $3$ others $\dots$ 
+        \item<4-> \textsc{Infinity}: There exists an infinite set.
+        \item<5-> plus $5$ others $\dots$ 
     \end{enumerate}
 \end{frame}
 
@@ -129,11 +125,11 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
     
 \end{frame}
 
-\begin{frame}{Trees}
+\begin{frame}{(Well-founded) Trees}
     \begin{definition}
-        A tree is a subset of finite sequences of natural numbers ($T \subseteq \mathbb{N}^{<\infty}$) such that 
-        if $\sigma = \langle m_0, m_1, \dots m_i, \dots m_k \rangle$ is in $T$, then every initial segment of $\sigma$ 
-        (for example $\tau = \langle m_0, m_1, \dots m_i \rangle$) is also in $T$.
+        A tree is a subset of finite sequences of natural numbers ($T \subseteq \mathbb{N}^{<\infty}$), such that 
+        leafs are the biggest sequences and root is the empty sequence. Moreover there is a branch in $T$ from the root 
+        to any leaf.
     \end{definition}
     \pause
     \begin{figure}
@@ -163,8 +159,8 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
 
 \begin{frame}{Set Theory in Second Order Arithmetic}
     We encode a set by a tree $T$ where \begin{enumerate}
-        \item<2-> If $\sigma \in T$ is an end node (a leaf), then $|\sigma|$ code the emptyset,
-        \item<3-> If $\tau$ is a direct child node of $\sigma$, then it code $|\tau| \in |\sigma|$.
+        \item<2-> If $\sigma \in T$ is a leaf, then $|\sigma|$ code the emptyset,
+        \item<3-> If $\tau$ is deeper than $\sigma$ on a branch, then it code $|\tau| \in |\sigma|$.
     \end{enumerate}
     \pause 
     \pause
@@ -190,6 +186,5 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
     
     \end{tikzpicture}
 \end{frame}
-
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.6)  6 FEB 2023 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.6)  6 FEB 2023 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1368,7 +1368,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 100.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 96.
 
 [10
 
@@ -1382,36 +1382,36 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 
 ] [15
 
-] [16
-
-] [17
-
 ]
-<ordinaller-poster-small.jpg, id=546, 376.40625pt x 532.23843pt>
+<ordinaller-poster-small.jpg, id=494, 376.40625pt x 532.23843pt>
 File: ordinaller-poster-small.jpg Graphic file (type jpg)
 <use ordinaller-poster-small.jpg>
-Package pdftex.def Info: ordinaller-poster-small.jpg  used on input line 116.
+Package pdftex.def Info: ordinaller-poster-small.jpg  used on input line 112.
 (pdftex.def)             Requested size: 342.2953pt x 484.03723pt.
 
-Overfull \vbox (235.62384pt too high) detected at line 116
+Overfull \vbox (235.62384pt too high) detected at line 112
  []
 
-[18
+[16
 
  <./ordinaller-poster-small.jpg>]
-<IMG_0607.jpg, id=573, 491.8375pt x 469.755pt>
+<IMG_0607.jpg, id=521, 491.8375pt x 469.755pt>
 File: IMG_0607.jpg Graphic file (type jpg)
 <use IMG_0607.jpg>
-Package pdftex.def Info: IMG_0607.jpg  used on input line 130.
+Package pdftex.def Info: IMG_0607.jpg  used on input line 126.
 (pdftex.def)             Requested size: 142.26378pt x 135.87424pt.
- [19
+ [17
 
  <./IMG_0607.jpg>]
 File: IMG_0607.jpg Graphic file (type jpg)
 <use IMG_0607.jpg>
-Package pdftex.def Info: IMG_0607.jpg  used on input line 130.
+Package pdftex.def Info: IMG_0607.jpg  used on input line 126.
 (pdftex.def)             Requested size: 142.26378pt x 135.87424pt.
- [20
+ [18
+
+] [19
+
+] [20
 
 ] [21
 
@@ -1422,10 +1422,6 @@ Package pdftex.def Info: IMG_0607.jpg  used on input line 130.
 ] [24
 
 ] [25
-
-] [26
-
-] [27
 
 ]
 \tf@nav=\write7
@@ -1459,17 +1455,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36492 strings out of 475281
- 739269 string characters out of 2774065
+ 36488 strings out of 475281
+ 739219 string characters out of 2774065
  1570614 words of memory out of 3000000
  57268 multiletter control sequences out of 15000+600000
  480219 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,727b,8639s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/thibk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (27 pages, 406949 bytes).
+Output written on main.pdf (25 pages, 388823 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 851 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
  359 words of extra memory for PDF output out of 10000 (max. 10000000)
 
