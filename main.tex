@@ -53,8 +53,8 @@ Arithmetic and Set Theory}
 
 \begin{document}
 
-\begin{frame}
-	\titlepage;
+\begin{frame}[plain]
+	\titlepage
 \end{frame}
 
 \begin{frame}{\textbf{The main question}: What are the appropriate axioms to prove the theorems of mathematics }
@@ -74,7 +74,7 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
     \end{example}
     \pause 
     \pause 
-    A counter-example, the Russel's Paradox: \begin{align*}
+    A counter-example, the Russell's Paradox: \begin{align*}
         S = \{ X : X \not\in X\}
     \end{align*}
     \begin{itemize}
@@ -125,36 +125,16 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
     
 \end{frame}
 
-\begin{frame}{(Well-founded) Trees}
-    \begin{definition}
-        A tree is a subset of finite sequences of natural numbers ($T \subseteq \mathbb{N}^{<\infty}$), such that 
-        leafs are the biggest sequences and root is the empty sequence. Moreover there is a branch in $T$ from the root 
-        to any leaf.
-    \end{definition}
-    \pause
+\begin{frame}{Trees}
     \begin{figure}
         \begin{tikzpicture}
             \tikzset{frontier/.style={distance from root=90pt}}
                 \Tree [.{$\langle \ \rangle$}
-                [.{$\langle 0 \rangle$} {$\langle 0, 1 \rangle$} ]
-                [.\node(a){$\langle 1 \rangle$}; {$\langle 1, 0 \rangle$} 
-                [.{$\langle 1, 1 \rangle$} {$\langle 1, 1, 0 \rangle$} ] ]]
+                    [.{$\langle 1 \rangle$} {$\langle 1, 1 \rangle$} ]
+                    [.\node(a){$\langle 2 \rangle$}; {$\langle 2, 1 \rangle$} 
+                    [.{$\langle 2, 2 \rangle$} {$\langle 2, 2, 1 \rangle$} ] ]]
         \end{tikzpicture}
     \end{figure}
-\end{frame}
-
-\begin{frame}{Another example of tree}
-    \begin{figure}
-        \begin{tikzpicture}
-            \tikzset{frontier/.style={distance from root=90pt}}
-                \Tree [.{$\langle \ \rangle$}
-                [.{$\langle 3 \rangle$} {$\langle 3, 2 \rangle$} ]
-                [.{$\langle 7 \rangle$} 
-                [.{$\langle 7, 1 \rangle$} {$\langle 7, 1, 9 \rangle$} ]
-                [.{$\langle 7, 22 \rangle$} {$\langle 7, 22, 0\rangle$} {$\langle 7, 22, 1\rangle$} ] ]
-                [.{$\langle 9 \rangle$} ] ]
-        \end{tikzpicture}
-    \end{figure}    
 \end{frame}
 
 \begin{frame}{Set Theory in Second Order Arithmetic}
@@ -171,9 +151,9 @@ Cantor, Hilbert, Brouwer, Weyl, von Neumann, Skolem, Tarski, Heyting, Gödel, $\
                 
                 \begin{scope}
                     \Tree [.{$\langle \ \rangle$}
-                    [.{$\langle 1 \rangle$} {$\langle 11 \rangle$} ]
-                    [.\node(a){$\langle 2 \rangle$}; {$\langle 21 \rangle$} 
-                    [.{$\langle 22 \rangle$} {$\langle 31 \rangle$} ] ]]
+                    [.{$\langle 1 \rangle$} {$\langle 1, 1 \rangle$} ]
+                    [.\node(a){$\langle 2 \rangle$}; {$\langle 2, 1 \rangle$} 
+                    [.{$\langle 2, 2 \rangle$} {$\langle 2, 2, 1 \rangle$} ] ]]
                 \end{scope} 
                 
                 \begin{scope}[xshift=6.5cm]
